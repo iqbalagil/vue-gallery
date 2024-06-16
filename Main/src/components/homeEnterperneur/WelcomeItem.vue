@@ -1,5 +1,5 @@
 <template>
-<div class="flex justify-center w-[100vw] h-[100vh] p-0 text-white align-middle bg-black rounded-lg mt-52 " v-motion :initial="{
+<div class="flex justify-center w-[100vw] h-[100vh] p-0 text-white align-middle bg-black rounded-lg " v-motion :initial="{
   scale: 0,
   delay: 100,
   y:0,

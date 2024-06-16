@@ -1,18 +1,23 @@
 <template>
-  <div class="container sticky z-50 w-full pb-2 mx-auto my-auto md:pb-5">
-    <nav class="flex flex-wrap">
-      <ul class="flex items-center justify-around space-x-4 align-middle md:hidden">
-        
+  <div class="container sticky z-50 w-full py-2 mx-auto my-auto md:py-0">
+    <nav class="flex flex-wrap justify-around md:justify-between ">
+       
+      <ul class="flex items-center space-x-4 align-middle md:hidden">
+        <input type="text" class="pl-10 border rounded-md border-neutral-200 focus:outline-neutral-200">
+      </ul>
+
+      <ul class="flex items-center space-x-4 align-middle md:hidden">
         <li class="p-2">
         <button @click="userTrigger">
           <v-icon name="fa-user-alt" width="30" height="30" />
         </button>
-        <div v-if="!userTrigger" class="fixed max-w-full min-w-[400px] max-h-full min-h-[1000px] bg-red-400 top-1">
+        <div v-if="!userTrigger" class="fixed min-w-[1000] max-w-full max-h-full shadow-inner min-h-[200px]: bg-neutral-50">
 
         </div>
         </li>
       </ul>
-      <!-- <ul class="flex items-center content-center justify-around space-x-4 align-middle">
+
+      <ul class="items-center content-center hidden my-auto space-x-4 align-middle md:flex">
         <li>
           <img src="@/assets/c.png" width="100" height="50" alt="logo/png" />
         </li>
@@ -20,6 +25,7 @@
         <li class="font-semibold">Inspiration</li>
         <li class="font-semibold">Gallery <v-icon name="fa-angle-down" /></li>
         <li>
+          
           <div class="relative hidden">
             <input
               type="text"
@@ -36,7 +42,11 @@
             </div>
           </div>
         </li>
-        <li>
+
+
+      </ul>
+      <ul class="items-center content-center hidden p-8 my-auto space-x-4 align-middle md:flex">
+      <li>
           <button
             @click="() => TogglePopup('buttonTrigger')"
             class="px-6 py-2 text-white rounded-md bg-neutral-700"
@@ -110,7 +120,7 @@
             </div>
           </RegisterViewPopup>
         </li>
-      </ul> -->
+      </ul>
     </nav>
   </div>
 </template>

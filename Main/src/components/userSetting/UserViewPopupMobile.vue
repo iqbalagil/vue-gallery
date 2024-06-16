@@ -1,5 +1,5 @@
 <template>
-    <div class="fixed max-w-full min-w-[400px] max-h-full min-h-[1000px] bg-red-400 top-1">
+    <div class="fixed z-50 h-full max-w-full max-h-full min-w-full bg-neutral-50">
 
     </div>
 </template>

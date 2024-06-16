@@ -1,19 +1,19 @@
 <template>
-  <div class="fixed text-center container bottom-0 z-[99] md:w-[60%] w-[70%]">
+  <div class="fixed text-center container bottom-0 z-[40] md:w-[60%] w-[70%]">
     <div class="mx-auto md:sticky">
       <nav :class="headerClass"
         class="flex flex-wrap px-2 m-5 mr-2 bg-black rounded-lg md:mr-64 md:mx-72 bg-opacity-70 md:justify-between"
       >
         <header
-          class="inline-flex justify-center items-center p-[1.15rem] my-1 gap-2 rounded-md md:bg-[#222]"
+          class="inline-flex justify-center items-center p-[1.25rem] my-1 gap-2 rounded-md md:bg-[#222]"
         >
           <!-- <v-icon name="fa-grunt" scale='2' /> -->
           <h1 v-if="!toggleNav" :class="{'relative':toggleNav , '':!toggleNav}" class="font-bold text-white font-cousine text-md font-body">
             cakra.<span class="text-[#fff083]">{{ pageTitle }}</span>
           </h1>
          <!-- <div id="sidemenu"> -->
-          <nav v-show="showview" v-if="toggleNav" :class="{'relative my-auto block  text-neutral-300 pb-10 mb-24':toggleNav,'hidden': !toggleNav }" >
-            <ul class="flex space-y-4 mx-2 flex-col fixed w-full max-w-[250px] h-full">
+          <nav v-show="showview" v-if="toggleNav" :class="{'relative my-auto block text-neutral-300 pb-10 mb-24':toggleNav,'hidden': !toggleNav }" >
+            <ul class="flex space-y-4 mx-2 flex-col items-start fixed w-full max-w-[250px] h-full">
               <li  v-for="link in LinksOpen" :key="link">
                 <router-link :to="{link: link.link2 }" >
                   {{ link.name2 }}
@@ -21,7 +21,7 @@
               </li>
             </ul>
           </nav>
-          <button @click="toggleNav = !toggleNav" :class="{' transition-all ease-linear w-[200%] md:pl-[25.6rem]  delay-100  flex end-1 ': toggleNav, '' :!toggleNav}" class="flex-col hidden h-4 gap-[0.07rem] md:flex w-7" >
+          <button @click="toggleNav = !toggleNav" :class="{' transition-all ease-linear w-[200%] md:pl-[25.6rem] delay-100  flex end-1 ': toggleNav, '' :!toggleNav}" class="flex-col hidden h-4 gap-[0.07rem] md:flex w-7" >
             <span :class="{ 'transition-transform delay-75 ease-linear rotate-45 translate-y-[0.4rem] fade': toggleNav, '': !toggleNav }" class=" w-4 h-[0.04rem] my-auto bg-white "></span>
             <span :class="{ 'opacity-0': toggleNav, '': !toggleNav }" class=" w-4 h-[0.07rem] bg-white "></span>
             <span :class="{ 'transition-transform delay-75 ease-linear -rotate-45 -translate-y-[0.2rem]': toggleNav, '': !toggleNav }" class=" w-4 h-[0.01rem] my-auto bg-white "></span>

@@ -18,14 +18,17 @@ export default {
       ]
     },
     extend: {
-      animation:{
-      marquee: 'marquee 20s linear infinite'
+      animation: {
+        marquee: 'marquee var(--marquee-duration, 6000ms) linear infinite',
+        'marquee-delayed': 'marquee var(--marquee-duration, 50s) linear infinite',
+      },
+      animationDelay: {
+        'marquee-delayed': 'calc(var(--marquee-duration, 26s) / -2)',
       },
     },
     keyframes: {
       marquee: {
-        '0%': {transform: 'translateX(0%)'},
-        '100%': {transform: 'translateX(-100%)'},
+        '100%': {'transform': 'translate(calc(-50% - 0.5rem))'}
       }
     }
   },
