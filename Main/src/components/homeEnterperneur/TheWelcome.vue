@@ -9,7 +9,7 @@
     >
       MUSEUM <span>CAKRAWALA</span>
     </h1>
-    <p class="absolute z-10 text-lg italic font-semibold text-white md:text-2xl w-44 text-ellipsis float-start md:bottom-40 bottom-10 left-56 font-netural">
+    <p class="sticky z-10 w-full my-auto text-lg italic font-semibold text-white md:text-2xl max-w-60 text-ellipsis float-start bottom-10 left-56 font-netural">
       “Culture is the sum of all the forms of art, of love, and of thought, which, in the course of centuries, have enabled man to be less enslaved.” – André Malraux
     </p>
     <img
@@ -48,7 +48,7 @@
         x: 300,
         y: 100
       }"
-      class="relative p-5 mx-auto my-auto bg-transparent backdrop-invert bottom-10 md:bottom-28"
+      class="relative p-5 mx-auto my-auto bg-transparent right-40 backdrop-invert bottom-10 md:bottom-28"
     />
   </div>
 </template>

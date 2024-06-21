@@ -48,6 +48,6 @@ const MarqueeEnterperneur = [
     <!-- <MainNavigationBar /> -->
     <TheWelcome />
     <Marquee :items="MarqueeEnterperneur" :speed="20" />
-    <!-- <WelcomeItem /> -->
+    <WelcomeItem />
   </main>
 </template>

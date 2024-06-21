@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed text-center container bottom-0 z-[40] md:w-[60%] w-[70%]">
+  <div class="fixed text-center container bottom-0 z-[40] md:max-w-[80rem] md:w-full w-[60%]">
     <div class="mx-auto md:sticky">
       <nav :class="headerClass"
         class="flex flex-wrap px-2 m-5 mr-2 bg-black rounded-lg md:mr-64 md:mx-72 bg-opacity-70 md:justify-between"
